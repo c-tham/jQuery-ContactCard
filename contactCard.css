@@ -1,0 +1,49 @@
+/* * {
+    outline: 1px dotted red;
+} */
+#wrapper {
+    width: 900px;
+    margin: 0px auto;
+    padding: 0px;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+}
+li {
+    padding: 10px;
+}
+ul div li {
+    padding: 0px 10px;
+}
+ul input {
+    width: 50%;
+}
+ul div input {
+    width: 68%;
+    height: 50px;
+    margin: 0px;
+}
+form input {
+    margin: 0px 0px 0px 10px;
+}
+table {
+    width: 80%;
+    border: 1px solid black;
+    text-align: center;
+}
+#leftside {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+#rightside {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
