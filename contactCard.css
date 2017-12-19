@@ -6,9 +6,6 @@
     margin: 0px auto;
     padding: 0px;
 }
-table, tr, td {
-    border: 1px solid black;
-}
 ul {
     list-style: none;
     padding: 0px;
@@ -30,20 +27,24 @@ ul div input {
 form input {
     margin: 0px 0px 0px 10px;
 }
-table {
-    width: 80%;
-    border: 1px solid black;
-    text-align: center;
-}
 #leftside {
-    width: 47%;
+    width: 40%;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
 }
 #rightside {
-    width: 47%;
+    width: 40%;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
+}
+#rightside div {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+#cardBack {
+    display: none;
 }

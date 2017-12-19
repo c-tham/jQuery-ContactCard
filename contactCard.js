@@ -2,12 +2,18 @@ $(document).ready(function() {
 
     $('form').submit(function() {
         console.log($(this).serialize());
-        $('#rightside').append('<table id="card"><tr><td><h1>' + $('input[name="firstsname"]').val() + ' '
-            + $('input[name="lastname"]').val() + '</h1><p>Click for description!</p></td></tr></table>');
+        $('#rightside').append('<div id="card"><p>Move your mouse on the name</p
+        ><p id="cardFront">' 
+            + $('input[name="firstname"]').val() + ' '
+            + $('input[name="lastname"]').val() 
+            + '<p id="cardBack">'
+            + $('input[name="description"]').val()
+            + '</p></div>');
         return false;
     });
 
-    $(document).on('mouseover', 'p', function(){
-        $(this).css('color', 'pink');
+    $(document).on('mouseover', '#cardFront', function(){
+        $(this).siblings().toggle();
     });
+
 });
